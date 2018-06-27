@@ -6,7 +6,7 @@ class Guvi101
         Scanner sc=new Scanner(System.in);
         String s=sc.next();
         int n=sc.nextInt();
-        String f=s.substring(n);
+        String f=s.substring(s.length()-n);
         System.out.println(f);
     }
 }
