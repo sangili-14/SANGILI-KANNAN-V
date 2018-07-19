@@ -5,6 +5,8 @@ class H3
     {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
+        String temp="";
+        int flag=0;
         int a[]=new int[n];
         for(int i=0;i<n;i++)
         {
@@ -14,8 +16,13 @@ class H3
         {
             if(a[i]==i)
             {
-                System.out.print(a[i]+" ");
+                flag=1;
+                temp=temp+(a[i]+" ");
             }
         }
+        if(flag==0)
+        System.out.print(-1);
+        else
+        System.out.print(temp);
     }
 }
